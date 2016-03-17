@@ -1,6 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
+
+router.get('/', function(req, res){
+  res.render('index');
+});
+
 /**
  * GET /api/qa
  * @returns a list of all Q&A sessions {results: [array of sessions]}

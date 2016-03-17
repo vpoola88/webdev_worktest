@@ -8,6 +8,10 @@ var http = require('http');
 var routes = require('./routes/routes');
 var app = express();
 
+// View Engine Setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+
 // Express setup
 app.use(express.static(path.join(global.ROOTPATH, 'public')));
 
