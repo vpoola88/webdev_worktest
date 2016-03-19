@@ -11,5 +11,15 @@
 angular
   .module('sliceApp', [
     'ngAnimate',
-    'ngResource'
-  ]);
+    'ngResource',
+    'ui.router'
+  ])
+  .config(function($stateProvider){
+
+    $stateProvider
+      .state('home', {
+        url: '/',
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
+      });
+  });
