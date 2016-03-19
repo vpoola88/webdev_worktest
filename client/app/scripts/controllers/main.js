@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc function
- * @name clientApp.controller:MainCtrl
+ * @name sliceApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the clientApp
+ * Controller of the sliceApp
  */
-angular.module('clientApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
+angular.module('sliceApp')
+  .controller('MainCtrl', function ($scope) {
+    $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'

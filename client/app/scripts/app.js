@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name clientApp
+ * @name sliceApp
  * @description
- * # clientApp
+ * # sliceApp
  *
  * Main module of the application.
  */
 angular
-  .module('clientApp', [
+  .module('sliceApp', [
     'ngAnimate',
     'ngResource'
   ]);
