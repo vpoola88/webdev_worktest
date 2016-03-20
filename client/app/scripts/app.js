@@ -21,5 +21,10 @@ angular
         url: '/',
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
+      }).state('viewQa',{
+        // url:'/qa/:id',
+        url: '/qa',
+        templateUrl: 'views/qa-view.html',
+        controller: 'MainCtrl'
       });
   });
