@@ -14,7 +14,7 @@ angular
     'ngResource',
     'ui.router'
   ])
-  .config(function($stateProvider){
+  .config(function($stateProvider, $locationProvider){
 
     $stateProvider
       .state('home', {
@@ -27,4 +27,6 @@ angular
         templateUrl: 'views/qa-view.html',
         controller: 'MainCtrl'
       });
+
+      $locationProvider.html5Mode(true);
   });

@@ -113,6 +113,9 @@ h4 {
   left: 0;
   width: 550px;
   height: 600px; }
+  @media (max-height: 901px) {
+    .content-wrapper {
+      height: 550px; } }
 
 .item {
   background: #333;
