@@ -1,3 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+.navbar-default {
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  border: 0px;
+  padding-top: 50px; }
+  .navbar-default .navbar-nav li {
+    width: 150px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center; }
+  .navbar-default .navbar-nav > li.active {
+    border-image: linear-gradient(to right, #FC00C6 0%, #6300FE 100%) 0 0 2 0; }
+  .navbar-default .navbar-nav > li > a {
+    color: #FFF;
+    font-size: 16px;
+    padding: 0px;
+    padding-top: 10px; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active {
+      color: #FFF; }
+  .navbar-default .navbar-brand {
+    color: #FFF; }
 
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #FFF;
+  background: transparent; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  background: url("../images/background.png") no-repeat center center;
+  background-size: cover; }
+
+.valign-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.valign-wrapper .valign {
+  display: block; }
+
+#mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #000000 1%, rgba(255, 255, 255, 0.01) 90%);
+  z-index: -1; }
+
+#page-wrapper {
+  margin-top: 80px; }
+
+p {
+  color: #FFF;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
+
+.sub {
+  font-size: 12px; }
+
+.live {
+  color: #FC00C6;
+  padding-left: 2px; }
+
+.content-wrapper {
+  border: 1px solid #fff;
+  background: #000;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 550px;
+  height: 600px;
+  max-width: 700px; }
+
+.item {
+  background: #333;
+  padding: 10px; }
+
+.img-div img {
+  height: 40px; }
 
 /*# sourceMappingURL=main.css.map */
