@@ -8,6 +8,13 @@ var http = require('http');
 var routes = require('./routes/routes');
 var app = express();
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+
 // Express setup
 app.use(express.static(path.join(global.ROOTPATH, 'public')));
 
