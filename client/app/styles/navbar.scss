@@ -1,0 +1,38 @@
+.navbar-default {
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  border: 0px;
+  padding-top: 50px;
+
+  .navbar-nav li {
+    width: 150px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }
+
+  .navbar-nav > li.active {
+    border-image: linear-gradient(to right, #FC00C6 0%, #6300FE 100%) 0 0 2 0;
+  }
+
+  .navbar-nav > li > a {
+    color: #FFF;
+    font-size: 16px;
+    padding:0px;
+    padding-top: 10px;
+
+    &:hover, &:active {
+      color: #FFF;
+    }
+  }
+
+  .navbar-brand {
+    color: #FFF;
+  }
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #FFF;
+  background: transparent;
+}
