@@ -198,10 +198,7 @@ h4 {
     width: 35%; }
 
   .topic .topic-answer {
-    width: 10%; }
-
-  .content-wrapper {
-    top: 15%; } }
+    width: 10%; } }
 /* -- Desktop & iPad Responsive -- */
 @media (max-width: 1024px) {
   .navbar {
@@ -220,7 +217,7 @@ h4 {
 
   .content-wrapper {
     position: absolute;
-    top: 6%;
+    top: 1%;
     width: auto !important;
     height: auto !important;
     border: none; }
