@@ -3,36 +3,35 @@
 
 
   <div class="content-wrapper">
-      <div class="mobile-logo">
-    <div class="row valign-wrapper">
-      <div class="wrap">
-      <div class="logo-img valign">
-        <img class="img-thumbnail inline" src="images/watermelon.png" />
-      </div>
-      <div class="logo-body valign">
-        <h3>Slice</h3>
-      </div>
-      </div>
+    <div class="mobile-logo">
+      <div class="row valign-wrapper">
+        <div class="wrap">
+          <div class="logo-img valign">
+            <img class="img-thumbnail inline" src="images/watermelon.png" />
+          </div>
+          <div class="logo-body valign">
+            <h3>Slice</h3>
+          </div>
+        </div>
       </div>
     </div>
     
-    <div class="item">
+    <div ng-repeat="qa in qas" class="item">
       <div class="row valign-wrapper">
         <div class="item-img valign img-div">
-          <img src="images/apple.png" class="img-circle img-responsive center-block">
-
+        <img src="http://localhost:8081{{qa.user.picture}}" class="img-circle img-responsive center-block">
         </div>
         <div class="item-title valign">
           <div class="row">
-            <p>Apple</p>
+            <p>{{qa.user.name}}</p>
             <p class="sub">Q&A <span class="live">Live</span></p>
           </div>
         </div>
         <div class="item-body valign">
-          <p>How bout them apples?</p>
+          <p>{{qa.topic}}</p>
         </div>
         <div class="item-arrow valign img-div2 text-right">
-          <img src="images/circle_rightarrow.png" class="img-thumbnail">
+          <a ui-sref="viewQa({id: qa.qaId})"><img src="images/circle_rightarrow.png" class="img-thumbnail"></a>
         </div>
       </div>
     </div>

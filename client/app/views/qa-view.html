@@ -16,24 +16,23 @@
         </div>
       </div>
       
-    <div class="topic">
+    <div  class="topic">
       <div class="row">
         <div class="col-xs-12">
-          <p>Topic: How bout them apples?</p>
+          <p>Topic: {{qa.topic}}</p>
         </div>
       </div>
-      <div class="question-box">
+      <div ng-repeat="question in qa.questions" class="question-box">
         <div class="question-header">
           <div class="row inline-flex">
             <div class="topic-img valign img-div">
-              <!-- <img src="images/apple.png" class="img-circle img-responsive center-block"> -->
-              <img src="images/apple.png" class="img-responsive img-circle center-block">
+              <img src="http://localhost:8081{{question.user.picture}}" class="img-responsive img-circle center-block">
             </div>
             <div class="topic-head valign">
               <div class="row">
                 <div class="col-xs-12">
-                  <h4>Apple</h4>
-                  <p class="gray">Palo Alto, US</p>
+                  <h4>{{question.user.name}}</h4>
+                  <p class="gray">{{question.user.location}}</p>
                 </div>
               </div>
             </div>
@@ -42,7 +41,7 @@
         <div class="question-body">
           <div class="row">
             <div class="col-xs-12">
-              <p class="gray">Why are you so delicious?</p>
+              <p class="gray">{{question.text}}</p>
             </div>
           </div>
           <br>
@@ -50,15 +49,15 @@
         <div class="question-footer">
           <div class="row valign-wrapper">
             <div class="col-xs-offset-7 topic-answer text-right valign">
-              <h4>Apple</h4>
+              <h4>{{qa.user.name}}</h4>
             </div>
             <div class="topic-answer-img img-div valign">
-              <img src="images/apple.png" class="img-responsive img-circle">
+              <img src="http://localhost:8081{{qa.user.picture}}" class="img-responsive img-circle">
             </div>
           </div>
           <div class="row">
             <div class="col-xs-12 text-right">
-              <p>I'm full of fructose!</p>
+              <p>{{question.answer}}</p>
             </div>
           </div>
         </div>
