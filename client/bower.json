@@ -12,7 +12,7 @@
     "angular-mocks": "^1.4.0"
   },
   "appPath": "app",
-  "moduleName": "clientApp",
+  "moduleName": "sliceApp",
   "overrides": {
     "bootstrap": {
       "main": [

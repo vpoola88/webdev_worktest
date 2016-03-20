@@ -1,0 +1,68 @@
+<div class="container-fluid">
+
+
+
+  <div class="content-wrapper">
+    <div class="mobile-logo">
+      <div class="row valign-wrapper">
+        <div class="wrap">
+        <div class="logo-img valign">
+          <img class="img-thumbnail inline" src="images/watermelon.png" />
+        </div>
+        <div class="logo-body valign">
+          <h3>Slice</h3>
+        </div>
+        </div>
+        </div>
+      </div>
+      
+    <div  class="topic">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>Topic: {{qa.topic}}</p>
+        </div>
+      </div>
+      <div ng-repeat="question in qa.questions" class="question-box">
+        <div class="question-header">
+          <div class="row inline-flex">
+            <div class="topic-img valign img-div">
+              <img src="http://localhost:8081{{question.user.picture}}" class="img-responsive img-circle center-block">
+            </div>
+            <div class="topic-head valign">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h4>{{question.user.name}}</h4>
+                  <p class="gray">{{question.user.location}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="question-body">
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="gray">{{question.text}}</p>
+            </div>
+          </div>
+          <br>
+        </div>
+        <div class="question-footer">
+          <div class="row valign-wrapper">
+            <div class="col-xs-offset-7 topic-answer text-right valign">
+              <h4>{{qa.user.name}}</h4>
+            </div>
+            <div class="topic-answer-img img-div valign">
+              <img src="http://localhost:8081{{qa.user.picture}}" class="img-responsive img-circle">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 text-right">
+              <p>{{question.answer}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

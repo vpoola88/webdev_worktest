@@ -1,83 +1,251 @@
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+.navbar-default {
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  border: 0px;
+  padding-top: 50px; }
+  .navbar-default .navbar-nav li {
+    width: 150px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center; }
+  .navbar-default .navbar-nav > li.active {
+    border-image: linear-gradient(to right, #FC00C6 0%, #6300FE 100%) 0 0 2 0; }
+  .navbar-default .navbar-nav > li > a {
+    color: #FFF;
+    font-size: 16px;
+    padding: 0px;
+    padding-top: 10px; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active {
+      color: #FFF; }
+  .navbar-default .navbar-brand {
+    color: #FFF;
+    font-size: 24px; }
+    .navbar-default .navbar-brand:hover {
+      color: #FFF; }
+    .navbar-default .navbar-brand img {
+      width: 50px; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #FFF;
+  background: transparent; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
 
 body {
-  padding: 0;
-}
+  background: url("../images/background.png") no-repeat center center;
+  background-size: cover; }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
 .footer {
+  position: absolute;
+  bottom: 4%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center; }
+
+.valign-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.valign-wrapper .valign {
+  display: block; }
+
+.img-circle {
+  background: #FFF;
+  border: 1px solid black; }
+
+.img-thumbnail {
+  background: transparent;
+  border: none; }
+
+.inline {
+  display: inline !important; }
+
+.inline-flex {
+  display: inline-flex; }
+
+#mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #000000 1%, rgba(255, 255, 255, 0.01) 90%);
+  z-index: -1; }
+
+#page-wrapper {
+  margin-top: 80px; }
+
+p {
+  color: #FFF;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.sub {
+  font-size: 12px; }
+
+.live {
+  color: #FC00C6;
+  padding-left: 2px; }
+
+.content-wrapper {
+  border: 1px solid #fff;
+  background: #000;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 550px;
+  height: 600px; }
+  @media (max-height: 901px) {
+    .content-wrapper {
+      height: 550px; } }
+
+.item {
+  background: #333;
+  padding: 10px;
+  border-bottom: 1px solid #000; }
+
+.img-div img {
+  height: 40px;
+  width: 40px; }
+
+.img-div2 img {
+  height: 35px;
+  width: 35px; }
+
+.question-box {
+  background: #FFF;
+  border: 5px solid #fff;
+  box-shadow: 0 0 13px #fff;
+  margin-top: 20px; }
+  .question-box p {
+    color: #000; }
+  .question-box .question-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black; }
+  .question-box .question-body {
+    padding: 10px; }
+  .question-box .question-footer {
+    padding-bottom: 20px; }
+    .question-box .question-footer img {
+      float: right;
+      margin-right: 20px; }
+    .question-box .question-footer h4 {
+      margin-right: -20px; }
+    .question-box .question-footer p {
+      padding-top: 10px; }
+
+.topic {
+  padding: 20px;
+  padding-top: 10px; }
+  .topic .topic-img {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .topic .topic-answer {
+    width: 25%; }
+  .topic .topic-answer-img {
+    width: 16.66666667%; }
+
+.item-img, .item-title, .item-arrow {
+  width: 16.66666667%;
   padding-left: 15px;
   padding-right: 15px;
-}
+  position: relative; }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
+.item-body {
+  width: 50%;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px; }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
+/* -- iPhone 5, iPhone 6, iPhone 6 Plus --*/
+@media (min-width: 320px) and (max-width: 767px) {
+  .item-img {
+    width: inherit;
+    padding-left: 0px; }
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
+  .item-title {
+    width: 25%;
+    padding-left: 0px;
+    padding-right: 0px; }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
+  .item-body {
+    padding-left: 0px;
+    padding-right: 0px; }
+    .item-body p {
+      font-size: 12px; }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}
+  .item-arrow {
+    width: 20%;
+    padding-left: 0px;
+    padding-right: 0px; }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+  .topic .topic-answer-img {
+    width: 35%; }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
+  .topic .topic-answer {
+    width: 10%; } }
+/* -- Desktop & iPad Responsive -- */
+@media (max-width: 1024px) {
+  .navbar {
+    display: none; }
+
+  body {
+    background: url();
+    background-color: #000; }
+
+  .row {
+    margin-left: 0px;
+    margin-right: 0px; }
+
+  #page-wrapper {
+    margin-top: 0px; }
+
+  .content-wrapper {
+    position: absolute;
+    top: 1%;
+    width: auto !important;
+    height: auto !important;
+    border: none; }
+
   .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
+    display: none; }
+
+  .mobile-logo {
+    height: 70px; }
+
+  .wrap {
+    display: inline-flex;
+    margin: 0 auto; }
+
+  .logo-img img {
+    width: 84.500px;
+    height: 61.672; }
+
+  .logo-body h3 {
+    color: #FFF;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; } }
+@media (min-width: 1024px) {
+  .mobile-logo {
+    display: none; } }
+
+/*# sourceMappingURL=main.css.map */
