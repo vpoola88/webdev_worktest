@@ -25,6 +25,15 @@ body {
   display: block;
 }
 
+.img-circle {
+  background: #FFF;
+  border: 1px solid black;
+}
+
+.img-thumbnail{
+  background: transparent;
+  border: none;
+}
 #mask {
     position: absolute;
     top: 0;
@@ -75,10 +84,64 @@ p {
 .item {
   background: #333;
   padding: 10px;
+  border-bottom:1px solid #000;
+}
+
+.topic {
+  padding: 10px;
 }
 
 .img-div {
   img {
     height: 40px;
+    width: 40px;
   }
 }
+
+.img-div2 {
+  img {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+
+
+.question-box{
+  p {
+    color: #000;
+  }
+  background: #FFF;
+  border: 5px solid #fff;
+  box-shadow: 0 0 13px #fff;
+  margin-top: 20px;
+
+  .question-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+  .question-body {
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
